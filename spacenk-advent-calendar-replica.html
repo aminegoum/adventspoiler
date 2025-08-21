@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LookFantastic Advent Calendar Takeover</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dy-advent-container">
+        <div class="advent-pdp-spoiler-alert">
+            <div class="lf-logo-container text-center">
+                <svg width="120" height="40" viewBox="0 0 200 60" class="lf-logo">
+                    <text x="10" y="35" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#74070E">LOOKFANTASTIC</text>
+                </svg>
+            </div>
+            <h2 class="text-center mb-4 container">THEY FIGURED OUT THAT SOMETHING ICONIC IS COMING</h2>
+            <p class="text-center container">Discover what's inside our exclusive Beauty Advent Calendar. Product sizes and quantities may vary.</p>
+            
+            <div class="custom-swiper-buttons position-relative">
+                <div class="hidden-tile-slider swiper" data-carousel-type="HIDDEN_TILE">
+                    <div class="swiper-wrapper">
+                        
+                        <!-- Day 1 - Hidden with Reveal Pattern -->
+                        <div class="swiper-slide position-relative">
+                            <h4>DAY 1</h4>
+                            <div class="hidden-tile">
+                                <div class="product-tile-holder"></div>
+                                <div class="js-hidden-tile hidden-tile__wrapping" data-pid="UK200049045">
+                                    <img src="file:///Users/amine.goumri21/Downloads/ChatGPT Image Aug 21, 2025, 12_33_20 PM.png" alt="Tap to Reveal" class="heart-reveal-image">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Days 2-5 - Hidden with Reveal Pattern -->
+                        <div class="swiper-slide position-relative">
+                            <h4>DAY 2</h4>
+                            <div class="hidden-tile">
+                                <div class="product-tile-holder"></div>
+                                <div class="js-hidden-tile hidden-tile__wrapping" data-pid="UK200049044">
+                                    <img src="file:///Users/amine.goumri21/Downloads/ChatGPT Image Aug 21, 2025, 12_33_20 PM.png" alt="Tap to Reveal" class="heart-reveal-image">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide position-relative">
+                            <h4>DAY 3</h4>
+                            <div class="hidden-tile">
+                                <div class="product-tile-holder"></div>
+                                <div class="js-hidden-tile hidden-tile__wrapping" data-pid="UK200039228">
+                                    <img src="file:///Users/amine.goumri21/Downloads/ChatGPT Image Aug 21, 2025, 12_33_20 PM.png" alt="Tap to Reveal" class="heart-reveal-image">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide position-relative">
+                            <h4>DAY 4</h4>
+                            <div class="hidden-tile">
+                                <div class="product-tile-holder"></div>
+                                <div class="js-hidden-tile hidden-tile__wrapping" data-pid="UK200054033">
+                                    <img src="file:///Users/amine.goumri21/Downloads/ChatGPT Image Aug 21, 2025, 12_33_20 PM.png" alt="Tap to Reveal" class="heart-reveal-image">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide position-relative">
+                            <h4>DAY 5</h4>
+                            <div class="hidden-tile">
+                                <div class="product-tile-holder"></div>
+                                <div class="js-hidden-tile hidden-tile__wrapping" data-pid="UK200036502">
+                                    <img src="file:///Users/amine.goumri21/Downloads/ChatGPT Image Aug 21, 2025, 12_33_20 PM.png" alt="Tap to Reveal" class="heart-reveal-image">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <button class="swiper-button-prev" aria-label="Previous"></button>
+                <button class="swiper-button-next" aria-label="Next"></button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .dy-advent-container {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .advent-pdp-spoiler-alert h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            color: #74070E;
+        }
+
+        .advent-pdp-spoiler-alert p {
+            font-size: 0.95rem;
+            color: #33181C;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 400;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .custom-swiper-buttons {
+            position: relative;
+            margin: 0 60px;
+        }
+
+        .hidden-tile-slider {
+            padding: 20px 0;
+        }
+
+        .swiper-slide {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .swiper-slide h4 {
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .hidden-tile {
+            width: 200px;
+            height: 350px;
+            position: relative;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border: 1px solid #f0f0f0;
+        }
+
+        /* Revealed Product Styling */
+        .hidden-tile.revealed .product-tile-holder {
+            padding: 15px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+        }
+
+        .product-info {
+            text-align: center;
+        }
+
+        .brand-name {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 4px;
+            color: #74070E;
+        }
+
+        .product-name {
+            font-size: 0.8rem;
+            line-height: 1.3;
+            margin-bottom: 8px;
+            color: #33181C;
+            font-weight: 400;
+        }
+
+        .product-price {
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #74070E;
+        }
+
+        .product-rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: 0.75rem;
+        }
+
+        .stars {
+            color: #ffa500;
+        }
+
+        .review-count {
+            color: #999;
+        }
+
+        .lf-logo-container {
+            margin-bottom: 1.5rem;
+        }
+
+        .lf-logo {
+            filter: drop-shadow(0 1px 2px rgba(116, 7, 14, 0.1));
+        }
+
+        /* Pattern Overlay Styling */
+        .hidden-tile__wrapping {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+        }
+
+        .hidden-tile__wrapping.open {
+            transform: translateY(100%);
+        }
+
+        .heart-reveal-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .heart-reveal-image:hover {
+            transform: scale(1.05);
+        }
+
+
+        /* Swiper Navigation */
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background: rgba(0,0,0,0.5);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+
+        .swiper-button-prev {
+            left: -60px;
+        }
+
+        .swiper-button-next {
+            right: -60px;
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+            background: rgba(0,0,0,0.7);
+        }
+
+        .swiper-button-disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .custom-swiper-buttons {
+                margin: 0 20px;
+            }
+            
+            .swiper-button-prev {
+                left: -30px;
+                width: 30px;
+                height: 30px;
+            }
+            
+            .swiper-button-next {
+                right: -30px;
+                width: 30px;
+                height: 30px;
+            }
+            
+            .hidden-tile {
+                width: 160px;
+                height: 280px;
+            }
+            
+            .advent-pdp-spoiler-alert h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .custom-swiper-buttons {
+                margin: 0 10px;
+            }
+            
+            .hidden-tile {
+                width: 140px;
+                height: 240px;
+            }
+        }
+    </style>
+
+    <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        (function() {
+            'use strict';
+            
+            // Initialize Swiper
+            const swiper = new Swiper('.hidden-tile-slider', {
+                slidesPerView: 'auto',
+                spaceBetween: 16,
+                centeredSlides: false,
+                loop: false,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 10,
+                        centeredSlides: true
+                    },
+                    480: {
+                        slidesPerView: 2,
+                        spaceBetween: 12,
+                        centeredSlides: false
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 16
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 16
+                    }
+                }
+            });
+
+            // LookFantastic product data
+            const mockProducts = {
+                'UK200049045': {
+                    image: 'file:///Users/amine.goumri21/Downloads/hydra5.jpg',
+                    brand: 'MEDIK8',
+                    name: 'Hydr8 B5 Intense 30ml',
+                    price: '£42.00',
+                    rating: '★★★★★',
+                    reviews: '(523)'
+                },
+                'UK200049044': {
+                    image: 'file:///Users/amine.goumri21/Downloads/iconic.jpg',
+                    brand: 'ICONIC LONDON',
+                    name: 'Prep-Set-Glow 120ml (Various Shades)',
+                    price: '£28.00',
+                    rating: '★★★★★',
+                    reviews: '(1,245)'
+                },
+                'UK200039228': {
+                    image: 'file:///Users/amine.goumri21/Downloads/sol de janeiro .jpg',
+                    brand: 'SOL DE JANEIRO',
+                    name: 'Cheirosa 62 Perfume Mist 90ml',
+                    price: '£22.00',
+                    rating: '★★★★★',
+                    reviews: '(892)'
+                },
+                'UK200054033': {
+                    image: 'https://images.unsplash.com/photo-1583241800731-fa399d55efe0?w=200&h=250&fit=crop&auto=format',
+                    brand: 'COLOR WOW',
+                    name: 'Shampoo and Conditioner Travel Duo',
+                    price: '£18.00',
+                    rating: '★★★★☆',
+                    reviews: '(567)'
+                },
+                'UK200036502': {
+                    image: 'file:///Users/amine.goumri21/Downloads/thewhitecompany.jpg',
+                    brand: 'THE WHITE COMPANY',
+                    name: 'Seychelles Votive Candle',
+                    price: '£12.00',
+                    rating: '★★★★★',
+                    reviews: '(324)'
+                }
+            };
+
+            // Handle reveal functionality
+            function handleReveal(hiddenTile, productId) {
+                const wrapper = hiddenTile.querySelector('.hidden-tile__wrapping');
+                const productHolder = hiddenTile.querySelector('.product-tile-holder');
+                
+                if (!wrapper.classList.contains('open')) {
+                    // Add opening class for animation
+                    wrapper.classList.add('open');
+                    
+                    // Get product data
+                    const product = mockProducts[productId];
+                    if (product) {
+                        // Create product HTML
+                        productHolder.innerHTML = `
+                            <div style="padding: 15px; height: 100%; display: flex; flex-direction: column;">
+                                <div style="flex: 1; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                                    <img src="${product.image}" alt="${product.name}" style="max-width: 100%; max-height: 200px; object-fit: contain;">
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 5px; color: #333;">${product.brand}</div>
+                                    <div style="font-size: 0.85rem; line-height: 1.3; margin-bottom: 8px; color: #666;">${product.name}</div>
+                                    <div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 8px; color: #333;">${product.price}</div>
+                                    <div style="display: flex; align-items: center; justify-content: center; gap: 5px; font-size: 0.75rem;">
+                                        <span style="color: #ffa500;">${product.rating}</span>
+                                        <span style="color: #999;">${product.reviews}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        
+                        // Mark as revealed
+                        hiddenTile.classList.add('revealed');
+                    }
+                }
+            }
+
+            // Add click event listeners to hidden tiles
+            document.querySelectorAll('.js-hidden-tile').forEach(function(tile) {
+                const productId = tile.getAttribute('data-pid');
+                const hiddenTile = tile.closest('.hidden-tile');
+                
+                tile.addEventListener('click', function() {
+                    handleReveal(hiddenTile, productId);
+                });
+            });
+
+        })();
+    </script>
+</body>
+</html>
